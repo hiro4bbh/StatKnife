@@ -1,4 +1,44 @@
 * {
+    font-family: sans-serif;
     margin: 0;
     padding: 0;
+}
+
+body {
+    background: whitesmoke;
+    padding: 2em 0 0 0;
+}
+
+.button {
+    cursor: default;
+}
+
+.panel > .header {
+    background-color: white;
+    border: 1px solid silver;
+    border-bottom-width: 0;
+    border-radius: 0.25em 0.25em 0 0;
+    display: flex;
+    font-weight: bold;
+    margin: 0 1em;
+    padding: 0.25em 1em;
+}
+.panel > .header > .buttons {
+    margin-right: 0.5em;
+}
+.panel > .header > .buttons > .close {
+    background-color: tomato;
+    border: 1px solid red;
+    border-radius: 50%;
+    display: inline-block;
+    height: 0.75em;
+    vertical-align: middle;
+    width: 0.75em;
+}
+.panel > .container {
+    background-color: white;
+    border: 1px solid silver;
+    border-radius: 0 0 0.25em 0.25em;
+    padding: 1em;
+    margin: 0 1em 2em 1em;
 }
