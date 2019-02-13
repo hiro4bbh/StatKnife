@@ -1,5 +1,5 @@
 {
-  "name": "stat-knife",
+  "name": "StatKnife",
   "version": "0.1.0",
   "description": "A convenient knife for statistical operations",
   "main": "main.js",
@@ -8,5 +8,5 @@
   },
   "keywords": ["stats"],
   "author": "Tatsuhiro Aoshima",
-  "license": "ISC"
+  "license": "MIT"
 }
