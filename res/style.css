@@ -19,9 +19,18 @@ table td, table th {
 table th {
   background: whitesmoke;
 }
+table .center {
+  text-align: center;
+}
+table .right {
+  text-align: right;
+}
 
 .button {
   cursor: default;
+}
+.ellipsis {
+  color: silver;
 }
 
 .panel > .header {

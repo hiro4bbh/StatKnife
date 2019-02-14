@@ -6,9 +6,11 @@
   <body>
     <div id="container"></div>
     <script type="module">
+      window.d3 = require('d3');
       import StatKnife from 'es6://lib/StatKnife.js';
       window.StatKnife = new StatKnife(window);
       window.StatKnife.importFromSystemPath('Dataset');
+      window.StatKnife.importFromSystemPath('Plot/Panel');
     </script>
   </body>
 </html>
