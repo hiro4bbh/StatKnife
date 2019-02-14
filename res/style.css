@@ -1,63 +1,63 @@
 * {
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-    word-break: break-all;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  word-break: break-all;
 }
 
 body {
-    background: whitesmoke;
-    padding: 2em 0 0 0;
+  background: whitesmoke;
+  padding: 2em 0 0 0;
 }
 table {
-    border: 1px solid silver;
+  border: 1px solid silver;
 }
 table td, table th {
-    min-width: 3em;
-    padding: 0.1em 0.5em;
+  min-width: 3em;
+  padding: 0.1em 0.5em;
 }
 table th {
-    background: whitesmoke;
+  background: whitesmoke;
 }
 
 .button {
-    cursor: default;
+  cursor: default;
 }
 
 .panel > .header {
-    background-color: white;
-    border: 1px solid silver;
-    border-bottom-width: 0;
-    border-radius: 0.25em 0.25em 0 0;
-    display: flex;
-    font-weight: bold;
-    margin: 0 1em;
-    padding: 0.25em 1em;
+  background-color: white;
+  border: 1px solid silver;
+  border-bottom-width: 0;
+  border-radius: 0.25em 0.25em 0 0;
+  display: flex;
+  font-weight: bold;
+  margin: 0 1em;
+  padding: 0.25em 1em;
 }
 .panel > .header > .buttons {
-    margin-right: 0.5em;
+  margin-right: 0.5em;
 }
 .panel > .header > .buttons > .close {
-    background-color: tomato;
-    border: 1px solid red;
-    border-radius: 50%;
-    display: inline-block;
-    height: 0.75em;
-    margin: 0 0 0.1em 0;
-    vertical-align: middle;
-    width: 0.75em;
+  background-color: tomato;
+  border: 1px solid red;
+  border-radius: 50%;
+  display: inline-block;
+  height: 0.75em;
+  margin: 0 0 0.1em 0;
+  vertical-align: middle;
+  width: 0.75em;
 }
 .panel > .header > .title {
-    margin: 0 auto;
-    text-align: center;
+  margin: 0 auto;
+  text-align: center;
 }
 .panel > .container {
-    background-color: white;
-    border: 1px solid silver;
-    border-radius: 0 0 0.25em 0.25em;
-    padding: 1em;
-    margin: 0 1em 2em 1em;
+  background-color: white;
+  border: 1px solid silver;
+  border-radius: 0 0 0.25em 0.25em;
+  padding: 1em;
+  margin: 0 1em 2em 1em;
 }
 .panel > .container .header {
-    margin: 0 0 0.5em 0;
+  margin: 0 0 0.5em 0;
 }
