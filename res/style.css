@@ -55,8 +55,9 @@ table th {
   background-color: white;
   border: 1px solid silver;
   border-radius: 0 0 0.25em 0.25em;
-  padding: 1em;
   margin: 0 1em 2em 1em;
+  overflow: scroll;
+  padding: 1em;
 }
 .panel > .container .header {
   margin: 0 0 0.5em 0;
