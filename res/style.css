@@ -2,11 +2,22 @@
     font-family: sans-serif;
     margin: 0;
     padding: 0;
+    word-break: break-all;
 }
 
 body {
     background: whitesmoke;
     padding: 2em 0 0 0;
+}
+table {
+    border: 1px solid silver;
+}
+table td, table th {
+    min-width: 3em;
+    padding: 0.1em 0.5em;
+}
+table th {
+    background: whitesmoke;
 }
 
 .button {
