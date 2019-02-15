@@ -26,8 +26,22 @@ table .right {
   text-align: right;
 }
 
+button {
+  padding: 1.5px 0.5em;
+  border: 1px solid silver;
+  border-radius: 0.5em;
+}
 .button {
   cursor: default;
+  display: inline-block;
+  font-size: small;
+}
+.button.close {
+  background-color: tomato;
+  border: 1px solid red;
+  border-radius: 50%;
+  height: 1.0em;
+  width: 1.0em;
 }
 .ellipsis {
   color: silver;
@@ -48,15 +62,6 @@ table .right {
 }
 .panel > .header > .buttons {
   margin-right: 0.5em;
-}
-.panel > .header > .buttons > .close {
-  background-color: tomato;
-  border: 1px solid red;
-  border-radius: 50%;
-  display: inline-block;
-  height: 0.75em;
-  vertical-align: middle;
-  width: 0.75em;
 }
 .panel > .header > .title {
   margin: 0 auto;
