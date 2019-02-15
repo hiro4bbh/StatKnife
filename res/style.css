@@ -32,6 +32,9 @@ table .right {
 .ellipsis {
   color: silver;
 }
+.vertically-middle {
+  vertical-align: middle;
+}
 
 .panel > .header {
   background-color: white;
@@ -52,7 +55,6 @@ table .right {
   border-radius: 50%;
   display: inline-block;
   height: 0.75em;
-  margin: 0 0 0.1em 0;
   vertical-align: middle;
   width: 0.75em;
 }
@@ -70,4 +72,8 @@ table .right {
 }
 .panel > .container .header {
   margin: 0 0 0.5em 0;
+}
+.panel > .container > svg {
+  display: block;
+  margin: 0 auto;
 }
