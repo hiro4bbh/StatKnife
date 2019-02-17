@@ -11,6 +11,7 @@ It will also provide many features supported by modern Web browsers in many deve
 
 - Interactive JavaScript (ES6) console on [Electron](https://electronjs.org/).
 - Simple panel manager for summaries or plots
+- Load the user configuration script at `$HOME/.StatKnife/init.js`
 
 ## Showcases
 

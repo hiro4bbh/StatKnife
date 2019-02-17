@@ -5,11 +5,18 @@ const app = electron.app;
 const BrowserWindow = electron.BrowserWindow;
 
 electron.protocol.registerStandardSchemes(['es6']);
+electron.protocol.registerStandardSchemes(['es6-root']);
 app.on('ready', function() {
   // Set MIME type 'text/javascript' for script[@type="module"].
   electron.protocol.registerBufferProtocol('es6', ( req, cb ) => {
     fs.readFile(
-      path.join(__dirname, req.url.replace('es6://', '')),
+      req.url.replace('es6://', ''),
+      (_, b) => { cb({mimeType: 'text/javascript', data: b})}
+    )
+  })
+  electron.protocol.registerBufferProtocol('es6-root', ( req, cb ) => {
+    fs.readFile(
+      req.url.replace('es6-root:/', ''),
       (_, b) => { cb({mimeType: 'text/javascript', data: b})}
     )
   })

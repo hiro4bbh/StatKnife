@@ -6,11 +6,19 @@
   <body>
     <div id="container"></div>
     <script type="module">
+      window.fs = require('fs');
+      window.process = require('process');
       window.d3 = require('d3');
       import StatKnife from 'es6://lib/StatKnife.js';
       window.StatKnife = new StatKnife(window);
       window.StatKnife.importFromSystemPath('Dataset');
       window.StatKnife.importFromSystemPath('Plot/Panel');
+      const initPath = `${process.env['HOME']}/.StatKnife/init.js`;
+      if (fs.existsSync(initPath)) {
+        import(`es6-root://${initPath}`).then(() => console.log(`loaded init.js in $HOME/.StatKnife`));
+      } else {
+        console.log(`skipped to load init.js in $HOME/.StatKnife`);
+      }
     </script>
   </body>
 </html>
