@@ -11,13 +11,14 @@
       window.d3 = require('d3');
       import StatKnife from 'es6://lib/StatKnife.js';
       window.StatKnife = new StatKnife(window);
+      window.StatKnife.importFromSystemPath('Dice');
       window.StatKnife.importFromSystemPath('Dataset');
       window.StatKnife.importFromSystemPath('Plot/Panel');
       const initPath = `${process.env['HOME']}/.StatKnife/init.js`;
       if (fs.existsSync(initPath)) {
-        import(`es6-root://${initPath}`).then(() => console.log(`loaded init.js in $HOME/.StatKnife`));
+        import(`es6-root://${initPath}`).then(() => console.log(`loaded init.js from $HOME/.StatKnife`));
       } else {
-        console.log(`skipped to load init.js in $HOME/.StatKnife`);
+        console.log(`skipped to load init.js from $HOME/.StatKnife`);
       }
     </script>
   </body>

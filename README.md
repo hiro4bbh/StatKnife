@@ -15,10 +15,6 @@ It will also provide many features supported by modern Web browsers in many deve
 
 ## Showcases
 
-![screenshot 1](doc/res/screenshot1.png "screenshot 1")
-![screenshot 2](doc/res/screenshot2.png "screenshot 2")
-![screenshot 3](doc/res/screenshot3.png "screenshot 3")
-
 ```js
 iris = StatKnife.DataSet.readIris()
 iris.summary().show()
@@ -26,6 +22,19 @@ iris.filter([0, 50, 100]).show()
 StatKnife.attach(iris).histogram('SepalLength').groupBy('Species').show()
 StatKnife.attach(iris).plot('SepalWidth', 'SepalLength').groupBy('Species').show()
 ```
+
+![screenshot 1](doc/res/screenshot1.png "screenshot 1")
+![screenshot 2](doc/res/screenshot2.png "screenshot 2")
+![screenshot 3](doc/res/screenshot3.png "screenshot 3")
+![screenshot 4](doc/res/screenshot4.png "screenshot 4")
+
+```js
+dice = new StatKnife.Dice(20190216)
+sampleNorm = Array(100000).fill(0.0).map((_, i) => dice.uniformDist()())
+StatKnife.attach(sampleNorm).histogram('value').thresholds(100).show()
+```
+
+![screenshot 5](doc/res/screenshot5.png "screenshot 5")
 
 ## Installation and Development
 
