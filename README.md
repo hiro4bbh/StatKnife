@@ -41,7 +41,7 @@ StatKnife.attach(sampleNorm).histogram('value').thresholds(100).show()
 
 ```js
 canvas = (new StatKnife.CanvasPanel()).show()
-canvas.context.fillStyle = '#ff000088';canvas.context.fillRect(50, 50, 250, 250);
+canvas.context.fillStyle = '#ff000088'; canvas.context.fillRect(50, 50, 250, 250)
 canvas.context.fillStyle = '#0000ff88'; canvas.context.fillRect(200, 200, 250, 250)
 ```
 
