@@ -9,8 +9,11 @@ It will also provide many features supported by modern Web browsers in many deve
 
 ## Features
 
-- Interactive JavaScript (ES6) console on [Electron](https://electronjs.org/).
-- Simple panel manager for summaries or plots
+- Use the interactive JavaScript (ES6) console on [Electron](https://electronjs.org/)
+- Implement the simple panel manager for summaries or plots
+- Save the contents of a panel in HTML/SVG/PNG
+- Support the simple data manipulations
+- Support the simple random number generators
 - Load the user configuration script at `$HOME/.StatKnife/init.js`
 
 ## Showcases
@@ -35,6 +38,14 @@ StatKnife.attach(sampleNorm).histogram('value').thresholds(100).show()
 ```
 
 ![screenshot 5](doc/res/screenshot5.png "screenshot 5")
+
+```js
+canvas = (new StatKnife.CanvasPanel()).show()
+canvas.context.fillStyle = '#ff000088';canvas.context.fillRect(50, 50, 250, 250);
+canvas.context.fillStyle = '#0000ff88'; canvas.context.fillRect(200, 200, 250, 250)
+```
+
+![screenshot 6](doc/res/screenshot6.png "screenshot 6")
 
 ## Installation and Development
 

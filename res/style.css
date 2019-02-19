@@ -78,6 +78,10 @@ button {
 .panel > .container .header {
   margin: 0 0 0.5em 0;
 }
+.panel > .container > canvas {
+  display: block;
+  margin: 0 auto;
+}
 .panel > .container > svg {
   display: block;
   margin: 0 auto;
