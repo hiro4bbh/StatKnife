@@ -40,8 +40,13 @@ button {
   background-color: tomato;
   border: 1px solid red;
   border-radius: 50%;
+  color: tomato;
   height: 1.0em;
+  text-align: center;
   width: 1.0em;
+}
+.button.close:hover {
+  color: black;
 }
 .ellipsis {
   color: silver;
