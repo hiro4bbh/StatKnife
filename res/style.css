@@ -9,6 +9,26 @@ body {
   background: whitesmoke;
   padding: 2em 0 0 0;
 }
+code {
+  background: whitesmoke;
+  font-family: monospace;
+  padding: 0.2em 0.4em;
+}
+h1, h2, h3, h4, h5 {
+  padding-bottom: 0.3em;
+}
+img {
+  width: 100%;
+}
+li + li {
+  margin-top: 0.25em;
+}
+p, pre > code, ul {
+  margin-bottom: 1em;
+}
+pre > code {
+  display: block;
+}
 table {
   border: 1px solid silver;
 }
@@ -24,6 +44,9 @@ table .center {
 }
 table .right {
   text-align: right;
+}
+ul {
+  padding-left: 2em;
 }
 
 button {

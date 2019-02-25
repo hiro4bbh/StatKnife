@@ -15,6 +15,7 @@
       window.StatKnife.importFromSystemPath('Dataset');
       window.StatKnife.importFromSystemPath('CanvasPanel');
       window.StatKnife.importFromSystemPath('Plot/Panel');
+      window.StatKnife.importFromSystemPath('MarkdownPanel');
       const initPath = `${process.env['HOME']}/.StatKnife/init.js`;
       if (fs.existsSync(initPath)) {
         import(`es6-root://${initPath}`).then(() => console.log(`loaded init.js from $HOME/.StatKnife`));
