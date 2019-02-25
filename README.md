@@ -14,7 +14,7 @@ It will also provide many features supported by modern Web browsers in many deve
 - Save the contents of a panel in HTML/SVG/PNG
 - Support the simple data manipulations
 - Support the simple random number generators
-- Support the markdown viewer
+- Support the markdown rendering with [markdown-it](https://markdown-it.github.io/) and the LaTeX rendering with [KaTeX](https://katex.org/).
 - Load the user configuration script at `$HOME/.stat-knife/init.js`
 
 ## Showcases
@@ -50,6 +50,18 @@ canvas.context.fillStyle = '#0000ff88'; canvas.context.fillRect(200, 200, 250, 2
 ![screenshot 6](doc/res/screenshot6.png "screenshot 6")
 
 ```js
+StatKnife.markdown().text(String.raw`
+Everything starts with complex numbers and Euler's formula: $e^{i\theta} = \cos\theta + i\sin\theta$.
+
+We can show that the well-known relations:
+
+~~~katex
+  1 = e^0 = e^{i\theta}e^{-i\theta} = \cos^2\theta + \sin^2\theta \\
+  \sin(\alpha + \beta) = \mathrm{Im}(e^{i\alpha}e^{i\beta}) = \sin\alpha\cos\beta + \cos\alpha\sin\alpha
+~~~
+
+...
+`).show()
 StatKnife.markdown().textFromFile('./README.md').show()
 ```
 
