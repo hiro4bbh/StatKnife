@@ -16,11 +16,11 @@
       window.StatKnife.importFromSystemPath('CanvasPanel');
       window.StatKnife.importFromSystemPath('Plot/Panel');
       window.StatKnife.importFromSystemPath('MarkdownPanel');
-      const initPath = `${process.env['HOME']}/.StatKnife/init.js`;
+      const initPath = `${process.env['HOME']}/.stat-knife/init.js`;
       if (fs.existsSync(initPath)) {
-        import(`es6-root://${initPath}`).then(() => console.log(`loaded init.js from $HOME/.StatKnife`));
+        import(`es6-root://${initPath}`).then(() => console.log(`loaded init.js from $HOME/.stat-knife`));
       } else {
-        console.log(`skipped to load init.js from $HOME/.StatKnife`);
+        console.log(`skipped to load init.js from $HOME/.stat-knife`);
       }
     </script>
   </body>

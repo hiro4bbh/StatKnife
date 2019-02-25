@@ -1,5 +1,5 @@
 {
-  "name": "StatKnife",
+  "name": "stat-knife",
   "version": "0.1.0",
   "description": "A convenient knife for statistical operations",
   "main": "main.js",
@@ -7,7 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "stats", "visualization", "electron"
+    "stats",
+    "visualization",
+    "electron"
   ],
   "author": "Tatsuhiro Aoshima",
   "license": "MIT",

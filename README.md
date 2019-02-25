@@ -1,10 +1,10 @@
-# StatKnife - A Convenient Knife for Statistical Operations
+# stat-knife - A Convenient Knife for Statistical Operations
 
 Copyright 2019- Tatsuhiro Aoshima (hiro4bbh@gmail.com).
 
 ## Introduction
 
-StatKnife is a convenient knife for statistical operations.
+stat-knife is a convenient knife for statistical operations.
 It will also provide many features supported by modern Web browsers in many development environments.
 
 ## Features
@@ -15,7 +15,7 @@ It will also provide many features supported by modern Web browsers in many deve
 - Support the simple data manipulations
 - Support the simple random number generators
 - Support the markdown viewer
-- Load the user configuration script at `$HOME/.StatKnife/init.js`
+- Load the user configuration script at `$HOME/.stat-knife/init.js`
 
 ## Showcases
 
@@ -35,6 +35,7 @@ StatKnife.attach(iris).plot('SepalWidth', 'SepalLength').groupBy('Species').show
 ```js
 dice = new StatKnife.Dice(20190216)
 sampleNorm = Array(100000).fill(0.0).map((_, i) => dice.uniformDist()())
+sampleNorm.summary().show()
 StatKnife.attach(sampleNorm).histogram('value').thresholds(100).show()
 ```
 
@@ -56,7 +57,7 @@ StatKnife.markdown().textFromFile('./README.md').show()
 
 ## Installation and Development
 
-The latest macOS is recommended for installing and developing StatKnife.
+The latest macOS is recommended for installing and developing stat-knife.
 
 ### Preparation
 
@@ -66,36 +67,36 @@ Install [node.js](https://nodejs.org/), then install [Electron](https://electron
 $ npm -g install electron
 ```
 
-### Install StatKnife
+### Install stat-knife
 
-Download StatKnife in your terminal as follows:
+Download stat-knife in your terminal as follows:
 
 ```
-$ git clone https://github.com/hiro4bbh/StatKnife
+$ git clone https://github.com/hiro4bbh/stat-knife
 ```
 
-Then, install the packages depended on by StatKnife at the root of StatKnife as follows:
+Then, install the packages depended on by stat-knife at the root of stat-knife as follows:
 
 ```
 $ npm install
 ```
 
-### Use and Develop StatKnife
+### Use and Develop stat-knife
 
-Start StatKnife at the root of StatKnife in your terminal as follows:
+Start stat-knife at the root of stat-knife in your terminal as follows:
 
 ```
 $ electron .
 ```
 
-[Visual Studio Code](https://code.visualstudio.com/) (VSCode) is recommended for developing StatKnife.
+[Visual Studio Code](https://code.visualstudio.com/) (VSCode) is recommended for developing stat-knife.
 VSCode provides a compact and fast development environment, including the terminal!
 
 ## TODO
 
 - Prepare documentations.
 - Write unit tests.
-- Prepare StatKnife logo.
+- Prepare stat-knife logo.
 - Implement more statistical functions.
 - Tweak visual styles and plot options.
 - Prepare release packages.
