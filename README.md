@@ -56,8 +56,10 @@ Everything starts with complex numbers and Euler's formula: $e^{i\theta} = \cos\
 We can show that the well-known relations:
 
 ~~~katex
-  1 = e^0 = e^{i\theta}e^{-i\theta} = \cos^2\theta + \sin^2\theta \\
-  \sin(\alpha + \beta) = \mathrm{Im}(e^{i\alpha}e^{i\beta}) = \sin\alpha\cos\beta + \cos\alpha\sin\alpha
+\begin{aligned}
+  1 &= e^0 = e^{i\theta}e^{-i\theta} = \cos^2\theta + \sin^2\theta \\
+  \sin(\alpha + \beta) &= \mathrm{Im}(e^{i\alpha}e^{i\beta}) = \sin\alpha\cos\beta + \cos\alpha\sin\alpha
+\end{aligned}
 ~~~
 
 ...
