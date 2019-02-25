@@ -10,11 +10,11 @@ It will also provide many features supported by modern Web browsers in many deve
 ## Features
 
 - Use the interactive JavaScript (ES6) console on [Electron](https://electronjs.org/)
-- Implement the simple panel manager for summaries or plots
+- Implement the simple panel manager for summaries or plots with [D3](https://d3js.org/)
 - Save the contents of a panel in HTML/SVG/PNG
 - Support the simple data manipulations
 - Support the simple random number generators
-- Support the markdown rendering with [markdown-it](https://markdown-it.github.io/) and the LaTeX rendering with [KaTeX](https://katex.org/).
+- Support the markdown rendering with [markdown-it](https://markdown-it.github.io/) and the LaTeX rendering with [KaTeX](https://katex.org/)
 - Load the user configuration script at `$HOME/.stat-knife/init.js`
 
 ## Showcases
