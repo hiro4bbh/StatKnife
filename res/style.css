@@ -33,6 +33,7 @@ p, pre > code, ul {
 }
 pre > code {
   display: block;
+  overflow: auto;
 }
 table {
   border: 1px solid silver;
