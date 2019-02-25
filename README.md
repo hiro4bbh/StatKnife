@@ -14,6 +14,7 @@ It will also provide many features supported by modern Web browsers in many deve
 - Save the contents of a panel in HTML/SVG/PNG
 - Support the simple data manipulations
 - Support the simple random number generators
+- Support the markdown viewer
 - Load the user configuration script at `$HOME/.StatKnife/init.js`
 
 ## Showcases
@@ -46,6 +47,12 @@ canvas.context.fillStyle = '#0000ff88'; canvas.context.fillRect(200, 200, 250, 2
 ```
 
 ![screenshot 6](doc/res/screenshot6.png "screenshot 6")
+
+```js
+StatKnife.markdown().textFromFile('./README.md').show()
+```
+
+![screenshot 7](doc/res/screenshot7.png "screenshot 7")
 
 ## Installation and Development
 
