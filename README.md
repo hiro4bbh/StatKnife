@@ -71,40 +71,27 @@ StatKnife.markdown().textFromFile('./README.md').show()
 
 ## Installation and Development
 
-The latest macOS is recommended for installing and developing stat-knife.
+The latest [Visual Studio Code](https://code.visualstudio.com/) (VSCode) is recommended for developing stat-knife.
+VSCode provides a compact and fast development environment, including the terminal!
 
-### Preparation
-
-Install [node.js](https://nodejs.org/), then install [Electron](https://electronjs.org/) globally in your terminal as follows:
-
-```
-$ npm -g install electron
-```
-
-### Install stat-knife
-
-Download stat-knife in your terminal as follows:
+At first, install [node.js](https://nodejs.org/).
+Then, download stat-knife in your terminal as follows:
 
 ```
 $ git clone https://github.com/hiro4bbh/stat-knife
 ```
 
-Then, install the packages depended on by stat-knife at the root of stat-knife as follows:
+Install the packages depended on by stat-knife in your terminal at `./stat-knife` as follows:
 
 ```
 $ npm install
 ```
 
-### Use and Develop stat-knife
-
-Start stat-knife at the root of stat-knife in your terminal as follows:
+Start stat-knife in your terminal at `./stat-knife` as follows:
 
 ```
-$ electron .
+$ npm start
 ```
-
-[Visual Studio Code](https://code.visualstudio.com/) (VSCode) is recommended for developing stat-knife.
-VSCode provides a compact and fast development environment, including the terminal!
 
 ## TODO
 

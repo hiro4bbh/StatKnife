@@ -4,6 +4,7 @@
   "description": "A convenient knife for statistical operations",
   "main": "main.js",
   "scripts": {
+    "start": "electron .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -17,5 +18,8 @@
     "d3": "^5.9.1",
     "katex": "^0.10.1",
     "markdown-it": "^8.4.2"
+  },
+  "devDependencies": {
+    "electron": "^4.0.5"
   }
 }
