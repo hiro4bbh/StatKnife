@@ -34,7 +34,7 @@ StatKnife.attach(iris).plot('SepalWidth', 'SepalLength').groupBy('Species').show
 
 ```js
 dice = new StatKnife.Dice(20190216)
-sampleNorm = Array(100000).fill(0.0).map((_, i) => dice.uniformDist()())
+sampleNorm = Array(100000).fill(0.0).map((_, i) => dice.normalDist()())
 sampleNorm.summary().show()
 StatKnife.attach(sampleNorm).histogram('value').thresholds(100).show()
 ```
